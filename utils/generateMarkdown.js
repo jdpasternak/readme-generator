@@ -9,7 +9,7 @@ function renderLicenseBadge(license) {
     .split(" ")
     .join(
       "%20"
-    )}-blue.svg)]](https://choosealicense.com/licenses/${licenseCode})`;
+    )}-blue.svg)](https://choosealicense.com/licenses/${licenseCode})`;
 }
 
 renderLicenseBadge(`GNU General Public License v3.0|gpl-3.0`);
