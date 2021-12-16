@@ -185,7 +185,7 @@ function init() {
     title: "Zero Interest Credit Card Calculator",
     description:
       "Calculate how much you owe each month on all your credit cards with 0% Promo APR.",
-    installInstructions:
+    installation:
       "This app runs in GitHub pages.  There are no instructions for installation.",
     usage:
       "Add, edit, and delete credit cards.  View total due for each card each month, and an overall total due on all cards each month.",
@@ -198,17 +198,21 @@ function init() {
   };
   console.log(generateMarkdown(dummyData));
 
-  inquirer
-    .prompt(questions)
-    .then((data) => {
-      return generateMarkdown(data);
-    })
-    .then((markdown) => {
-      writeToFile("./dist/README.md", markdown);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  writeToFile("./dist/README.md", generateMarkdown(dummyData))
+    .then((response) => console.log(response))
+    .catch((err) => console.log(err));
+
+  //   inquirer
+  //     .prompt(questions)
+  //     .then((data) => {
+  //       return generateMarkdown(data);
+  //     })
+  //     .then((markdown) => {
+  //       writeToFile("./dist/README.md", markdown);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
 }
 
 // Function call to initialize app
