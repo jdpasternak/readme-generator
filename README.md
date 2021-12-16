@@ -6,8 +6,8 @@ Use this tool to dynamically generate README files for GitHub projects.
 
 ## Table of Contents
 
-[Installation](#installation)
-[Usage](#usage)
+- [Installation](#installation)
+- [Usage](#usage)
 
 ## Installation
 
