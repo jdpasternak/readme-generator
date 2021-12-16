@@ -25,10 +25,14 @@ Add, edit, and delete credit cards.  View total due for each card each month, an
 
 To contribute, please submit issues, fork the repo, and submit your PR for review.
 
-## License
-This software is covered by MIT.
-
 ## Testing
 
 No testing at this time.
 
+## License
+This software is covered by MIT.
+
+## Questions
+Created by [jdpasternak](https://github.com/jdpasternak).
+Contact Email: jdp.pasternak@gmail.com
+Contact Instructions: Just send me an email!

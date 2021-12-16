@@ -62,6 +62,11 @@ ${data.contrib}
 ${data.testing}
 
 ${renderLicenseSection(data.license)}
+
+## Questions
+Created by [${data.github}](https://github.com/${data.github}).
+Contact Email: ${data.email}
+Contact Instructions: ${data.contactInstructions}
 `;
 }
 

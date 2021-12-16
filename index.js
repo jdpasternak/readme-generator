@@ -236,6 +236,11 @@ const questions = [
       }
     },
   },
+  {
+      type: "input",
+      name: "contactInstructions",
+      message: "Provide instructions for those who wish to reach out to you:",
+  }
 ];
 
 // TODO: Create a function to write README file
@@ -270,6 +275,7 @@ function init() {
     license: "MIT|mit",
     github: "jdpasternak",
     email: "jdp.pasternak@gmail.com",
+    contactInstructions: "Just send me an email!"
   };
   console.log(generateMarkdown(dummyData));
 
