@@ -5,11 +5,14 @@ function renderLicenseBadge(license) {
     return "";
   }
   let [licenseLong, licenseCode] = license.split("|");
-  return `[![${licenseLong}](https://img.shields.io/badge/license-${licenseLong.replace(
-    " ",
-    "%20"
-  )}-blue.svg)](https://choosealicense.com/licenses/${licenseCode})`;
+  return `[![${licenseLong}](https://img.shields.io/badge/license-${licenseLong
+    .split(" ")
+    .join(
+      "%20"
+    )}-blue.svg)]](https://choosealicense.com/licenses/${licenseCode})`;
 }
+
+renderLicenseBadge(`GNU General Public License v3.0|gpl-3.0`);
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
