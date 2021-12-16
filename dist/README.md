@@ -1,5 +1,5 @@
-# Zero Percent Interest Calculator
-[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit)
+# A prject title
+[![GNU General Public License v3.0](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20v3.0-blue.svg)](https://choosealicense.com/licenses/gpl-3.0)
 
 ## Table of Contents
 [Description](#description)
@@ -11,28 +11,28 @@
 
 ## Description
 
-Calculate the total amount of money due each month on any number of 0% promo APR credit cards.
+A project description
 
 ## Installation
 
-This project is live on GitHub pages and does not need to be installed.
+iNstall instrcutions
 
 ## Usage
 
-Add, edit, and delete credit cards. View calculated totals in each card or overall at the bottom of the screen.
+Some usage guidelines
 
 ## Contributing
 
-Please fork this repository, submit an issue, then submit your PR.
+Some contribution guidelines
 
 ## Testing
 
-No testing at this time.
+Tests and how to run them
 
 ## License
-This software is covered by MIT.
+This software is covered by GNU General Public License v3.0.
 
 ## Questions
 Created by [jdpasternak](https://github.com/jdpasternak).
 Contact Email: jdp.pasternak@gmail.com
-Contact Instructions: Please send me an email and I will get back to you within 3 business days.
+Contact Instructions: Email me and i'll reply within 3-5 business days.
