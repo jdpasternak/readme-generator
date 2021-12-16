@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
+const { writeFile, fstat } = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -31,7 +33,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "installInstructions",
+    name: "installation",
     message: "Enter instructions to install your project:",
     validate: (input) => {
       if (input) {
@@ -162,10 +164,55 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return new Promise((resolve, reject) => {
+    writeFile(fileName, data, (err) => {
+      if (err) {
+        reject(err);
+      }
+
+      resolve({
+        ok: true,
+        message: "File written successfully!",
+      });
+    });
+  });
+}
 
 // TODO: Create a function to initialize app
 function init() {
+  const dummyData = {
+    title: "Zero Interest Credit Card Calculator",
+    description:
+      "Calculate how much you owe each month on all your credit cards with 0% Promo APR.",
+    installation:
+      "This app runs in GitHub pages.  There are no instructions for installation.",
+    usage:
+      "Add, edit, and delete credit cards.  View total due for each card each month, and an overall total due on all cards each month.",
+    contrib:
+      "To contribute, please submit issues, fork the repo, and submit your PR for review.",
+    testing: "No testing at this time.",
+    license: "bsl-1.0",
+    github: "jdpasternak",
+    email: "jdp.pasternak@gmail.com",
+  };
+  console.log(generateMarkdown(dummyData));
+
+  writeToFile("./dist/README.md", generateMarkdown(dummyData))
+    .then((response) => console.log(response))
+    .catch((err) => console.log(err));
+
+  //   inquirer
+  //     .prompt(questions)
+  //     .then((data) => {
+  //       return generateMarkdown(data);
+  //     })
+  //     .then((markdown) => {
+  //       writeToFile("./dist/README.md", markdown);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
 }
 
 // Function call to initialize app
