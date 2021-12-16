@@ -25,7 +25,7 @@ function renderLicenseSection(license) {
   }
   let [licenseLong] = license.split("|");
   return `## License
-This license is covered by ${licenseLong}`;
+This software is covered by ${licenseLong}.`;
 }
 
 // TODO: Create a function to generate markdown for README
