@@ -1,4 +1,4 @@
-# Zero Interest Credit Card Calculator
+# Zero Percent Interest Calculator
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit)
 
 ## Table of Contents
@@ -11,19 +11,19 @@
 
 ## Description
 
-Calculate how much you owe each month on all your credit cards with 0% Promo APR.
+Calculate the total amount of money due each month on any number of 0% promo APR credit cards.
 
 ## Installation
 
-This app runs in GitHub pages.  There are no instructions for installation.
+This project is live on GitHub pages and does not need to be installed.
 
 ## Usage
 
-Add, edit, and delete credit cards.  View total due for each card each month, and an overall total due on all cards each month.
+Add, edit, and delete credit cards. View calculated totals in each card or overall at the bottom of the screen.
 
 ## Contributing
 
-To contribute, please submit issues, fork the repo, and submit your PR for review.
+Please fork this repository, submit an issue, then submit your PR.
 
 ## Testing
 
@@ -35,4 +35,4 @@ This software is covered by MIT.
 ## Questions
 Created by [jdpasternak](https://github.com/jdpasternak).
 Contact Email: jdp.pasternak@gmail.com
-Contact Instructions: Just send me an email!
+Contact Instructions: Please send me an email and I will get back to you within 3 business days.
