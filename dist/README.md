@@ -1,4 +1,5 @@
 # Zero Interest Credit Card Calculator
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://choosealicense.com/licenses/mit)
 
 ## Table of Contents
 [Description](#description)
@@ -6,7 +7,7 @@
 [Usage](#usage)
 [Contributing](#contributing)
 [Testing](#testing)
-
+[License](#license)
 
 ## Description
 
@@ -24,7 +25,8 @@ Add, edit, and delete credit cards.  View total due for each card each month, an
 
 To contribute, please submit issues, fork the repo, and submit your PR for review.
 
-
+## License
+This software is covered by MIT.
 
 ## Testing
 
