@@ -5,7 +5,10 @@ function renderLicenseBadge(license) {
     return "";
   }
   let [licenseLong, licenseCode] = license.split("|");
-  return `[![${licenseLong}](https://img.shields.io/badge/license-${licenseLong}-blue.svg)](https://choosealicense.com/licenses/${licenseCode})`;
+  return `[![${licenseLong}](https://img.shields.io/badge/license-${licenseLong.replace(
+    " ",
+    "%20"
+  )}-blue.svg)](https://choosealicense.com/licenses/${licenseCode})`;
 }
 
 // TODO: Create a function that returns the license link
