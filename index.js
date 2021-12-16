@@ -31,7 +31,7 @@ const questions = [
   },
   {
     type: "input",
-    name: "installInstructions",
+    name: "installation",
     message: "Enter instructions to install your project:",
     validate: (input) => {
       if (input) {
