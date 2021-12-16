@@ -166,6 +166,21 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
+  const dummyData = {
+    title: "Zero Interest Credit Card Calculator",
+    description:
+      "Calculate how much you owe each month on all your credit cards with 0% Promo APR.",
+    installInstructions:
+      "This app runs in GitHub pages.  There are no instructions for installation.",
+    usage:
+      "Add, edit, and delete credit cards.  View total due for each card each month, and an overall total due on all cards each month.",
+    contrib:
+      "To contribute, please submit issues, fork the repo, and submit your PR for review.",
+    testing: "No testing at this time.",
+    license: "bsl-1.0",
+    github: "jdpasternak",
+    email: "jdp.pasternak@gmail.com",
+  };
 }
 
 // Function call to initialize app
