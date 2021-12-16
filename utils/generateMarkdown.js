@@ -57,12 +57,11 @@ ${data.usage}
 
 ${data.contrib}
 
-${renderLicenseSection(data.license)}
-
 ## Testing
 
 ${data.testing}
 
+${renderLicenseSection(data.license)}
 `;
 }
 
