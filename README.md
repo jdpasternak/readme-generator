@@ -33,4 +33,4 @@ You must have `node` and `npm` installed on your local machine. This app was bui
 
 ### Video Demonstration
 
-[![Watch a demonstration on how to use the application.](./assets/images/README%20Generator/README_Generator_First_Frame.png)](https://jdpasternak/github.io/readme-generator)
+[![Watch a demonstration on how to use the application.](./assets/images/README%20Generator/README_Generator_First_Frame.png)](https://jdpasternak.github.io/readme-generator)
