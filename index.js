@@ -275,6 +275,7 @@ function init() {
     license: "MIT|mit",
     github: "jdpasternak",
     email: "jdp.pasternak@gmail.com",
+    contactInstructions: "Just send me an email!"
   };
   console.log(generateMarkdown(dummyData));
 
