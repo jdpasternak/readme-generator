@@ -236,6 +236,11 @@ const questions = [
       }
     },
   },
+  {
+      type: "input",
+      name: "contactInstructions",
+      message: "Provide instructions for those who wish to reach out to you:",
+  }
 ];
 
 // TODO: Create a function to write README file
