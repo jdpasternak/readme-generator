@@ -237,10 +237,10 @@ const questions = [
     },
   },
   {
-      type: "input",
-      name: "contactInstructions",
-      message: "Provide instructions for those who wish to reach out to you:",
-  }
+    type: "input",
+    name: "contactInstructions",
+    message: "Provide instructions for those who wish to reach out to you:",
+  },
 ];
 
 // TODO: Create a function to write README file
@@ -261,39 +261,17 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  const dummyData = {
-    title: "Zero Interest Credit Card Calculator",
-    description:
-      "Calculate how much you owe each month on all your credit cards with 0% Promo APR.",
-    installation:
-      "This app runs in GitHub pages.  There are no instructions for installation.",
-    usage:
-      "Add, edit, and delete credit cards.  View total due for each card each month, and an overall total due on all cards each month.",
-    contrib:
-      "To contribute, please submit issues, fork the repo, and submit your PR for review.",
-    testing: "No testing at this time.",
-    license: "MIT|mit",
-    github: "jdpasternak",
-    email: "jdp.pasternak@gmail.com",
-    contactInstructions: "Just send me an email!"
-  };
-  console.log(generateMarkdown(dummyData));
-
-  writeToFile("./dist/README.md", generateMarkdown(dummyData))
-    .then((response) => console.log(response))
-    .catch((err) => console.log(err));
-
-  //   inquirer
-  //     .prompt(questions)
-  //     .then((data) => {
-  //       return generateMarkdown(data);
-  //     })
-  //     .then((markdown) => {
-  //       writeToFile("./dist/README.md", markdown);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
+  inquirer
+    .prompt(questions)
+    .then((data) => {
+      return generateMarkdown(data);
+    })
+    .then((markdown) => {
+      writeToFile("./dist/README.md", markdown);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 // Function call to initialize app
